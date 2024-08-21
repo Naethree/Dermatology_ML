@@ -1,9 +1,9 @@
 # Dermatology_ML
 
-# DermGuard: Erythemato-Squamous Disease Classification
+**DermGuard: Erythemato-Squamous Disease Classification**
 This project focuses on the classification of erythemato-squamous diseases using a dermatology dataset. The primary objective was to build machine learning models to accurately classify different types of erythemato-squamous diseases based on clinical and histopathological features.
 
-# Key Highlights:
+**Key Highlights:**
 - Descriptive Analysis: Performed a detailed descriptive analysis of the dataset to explore the distribution of clinical and histopathological features. Visualizations were created to examine the relationships between features and their impact on disease classification.
 
 - Data Preprocessing: Conducted thorough preprocessing, including handling missing values, scaling features using Python libraries in Google Colab.
@@ -14,7 +14,7 @@ This project focuses on the classification of erythemato-squamous diseases using
 
 - Web Application - DermGuard: Developed a user-friendly web application using Flask, HTML, and CSS. The application, named DermGuard, allows users to input clinical and histopathological data to predict the likelihood of different erythemato-squamous diseases.
 
-# Technologies Used:
+**Technologies Used:**
 Python 
 Google Colab 
 Flask (Backend Web Framework)
