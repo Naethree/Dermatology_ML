@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" ,initial-scale=1.0">
+    <title>Dermatology Disease Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <!--css file link-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!--header section starts-->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Health<span>.</span></a>
+
+        <!--header section ends-->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#prediction">prediction</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a hef="#" class="fas fa-heart"></a>
+            <a hef="#" class="fas fa-shopping-cart"></a>
+            <a hef="#" class="fas fa-user"></a>
+        </div>
+    </header>
+
+    <!--home section starts-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Healthy Skin, Happy Life</h3>
+            <span>Glow with Confidence</span>
+            <p>Expert Care for Every Skin Type</p>
+            <a href="#" class="btn">Explore now</a>
+        </div>
+    </section>
+
+
+    <!--home section ends-->
+
+    <!--about section starts-->
+    <section class="about" id="about">
+        <h1 class="heading"><span>about </span>us</h1>
+
+        <div class="row">
+            <div class="video-container">
+                <video src="{{ url_for('static', filename='videos/Video_clip.mp4') }}" loop autoplay muted></video>
+                <h3>Skin Health</h3>
+            </div>
+            <div class="content">
+                <h3>why choose us?</h3>
+                <p>Accurate, timely, and personalized
+                    dermatology disease predictions powered
+                    by advanced machine learning algorithms. Our platform is designed exclusively for healthcare
+                    professionals, ensuring precise diagnostics that aid in better treatment planning. Trust in our
+                    cutting-edge technology to support your expertise and improve patient outcomes.
+                </p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--about section ends-->
+
+    <!--card section starts-->
+    <section id="cards" class="cards">
+        <h1 class="heading"><span>Disease </span>Type</h1>
+        <div class="container">
+            <div class="section-title">
+                <h2 style="text-align: center; color: #333; font-size: 14px; line-height: 1.4; font-weight: normal;">
+                    Our website is designed to assist in the diagnosis of erythemato-squamous diseases, a group that
+                    includes psoriasis, seborrheic dermatitis, lichen planus, pityriasis rosea, chronic dermatitis, and
+                    pityriasis rubra pilaris. These diseases share common clinical features like erythema and scaling,
+                    making differential diagnosis challenging. While a biopsy is often necessary, these conditions also
+                    exhibit overlapping histopathological characteristics. Our tool helps predict the type of
+                    erythemato-squamous disease, offering a valuable resource for healthcare professionals in managing
+                    these complex cases.
+                </h2>
+
+
+            </div>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/image_1.jpg') }}" class="card-img-top"
+                            alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">psoriasis</h5>
+                            <p class="card-text">A chronic autoimmune condition that causes rapid skin cell turnover,
+                                leading to thick, red, scaly patches on the skin. It can occur anywhere on the body but
+                                is most common on the scalp, elbows, and knees.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/image_2.jpg') }}" class="card-img-top"
+                            alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">seborrheic dermatitis</h5>
+                            <p class="card-text">A common skin condition that causes red, scaly patches and dandruff,
+                                typically affecting oily areas like the scalp, face, and chest. It can be associated
+                                with itching and is often chronic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/image_3.jpeg') }}" class="card-img-top"
+                            alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">lichen planus</h5>
+                            <p class="card-text">An inflammatory condition that affects the skin and mucous membranes,
+                                resulting in purplish, itchy, flat-topped bumps. It can affect various parts of the
+                                body, including the wrists, ankles, and oral cavity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/image_4.jpeg') }}" class="card-img-top"
+                            alt="Image 4">
+                        <div class="card-body">
+                            <h5 class="card-title">pityriasis rosea</h5>
+                            <p class="card-text">A temporary skin condition that begins with a single large spot (herald
+                                patch) on the chest, abdomen, or back, followed by smaller lesions. The rash usually
+                                resolves on its own within several weeks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/image_5.jpeg') }}" class="card-img-top"
+                            alt="Image 5">
+                        <div class="card-body">
+                            <h5 class="card-title"> chronic dermatitis</h5>
+                            <p class="card-text">A long-term inflammation of the skin characterized by redness,
+                                swelling, itching, and dryness. It can be triggered by allergens, irritants, or other
+                                underlying conditions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/image_6.jpeg') }}" class="card-img-top"
+                            alt="Image 6">
+                        <div class="card-body">
+                            <h5 class="card-title">pityriasis rubra pilaris</h5>
+                            <p class="card-text">A rare skin disorder that causes constant inflammation and scaling of
+                                the skin. It typically starts with a reddish-orange patch and can spread, leading to
+                                thickened skin, painful cracks, and scaling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--card section endss-->
+
+
+
+    <!-- Prediction Form Section -->
+    <center>
+        <!-- Prediction Form Section -->
+        <section class="prediction" id="prediction">
+            <h1 class="heading"><span>Disease </span>Prediction</h1>
+            <div class="form-container">
+                <form id="prediction-form" action="/" method="POST" style="display: inline-block;">
+                    <div class="form-grid">
+                        {% for feature in features %}
+                        <div class="form-group">
+                            <label for="{{ feature }}">{{ feature.replace('_', ' ').title() }}</label>
+                            <select name="{{ feature }}" id="{{ feature }}">
+                                <option value="0">0 - None</option>
+                                <option value="1">1 - Mild</option>
+                                <option value="2">2 - Moderate</option>
+                                <option value="3">3 - Severe</option>
+                            </select>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <button type="submit" class="btn">Predict</button>
+                </form>
+
+                <div id="result" class="result" style="margin-top: 1rem;">
+                    {% if prediction %}
+                    <h2>Prediction Result: <span>{{ prediction }}</span></h2>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        <script>
+            document.getElementById('prediction-form').addEventListener('submit', function (event) {
+                event.preventDefault();  // Prevent the form from submitting the traditional way
+                var formData = new FormData(this);
+
+                fetch('/', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('result').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error:', error));
+            });
+        </script>
+    </center>
+
+    <!--review section starts-->
+    <section class="review" id="review">
+        <h1 class="heading"> customer's <span>review</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>This prediction tool has significantly streamlined my diagnostic process. It offers quick, accurate
+                    insights that support my clinical judgment, allowing me to provide better-targeted treatments for my
+                    patients. A fantastic resource for any dermatologist.</p>
+                <div class="user">
+                    <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I’ve been impressed with the precision and reliability of this service. It’s easy to use and
+                    integrates seamlessly into my workflow, helping me make informed decisions faster. Highly
+                    recommended for professionals dealing with skin conditions.</p>
+                <div class="user">
+                    <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="">
+                    <div class="user-info">
+                        <h3>Mary Lisa</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>The predictive accuracy of this tool is remarkable. It has become an essential part of my practice,
+                    offering valuable support in diagnosing complex dermatological diseases. A must-have for any
+                    healthcare provider in dermatology.</p>
+                <div class="user">
+                    <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="">
+                    <div class="user-info">
+                        <h3>Jason Edward</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+        </div>
+    </section>
+    <!--review section ends-->
+
+    <!--contact section starts-->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Contact </span>Us</h1>
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="phone" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+            <div class="image">
+                <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!--contact section ends-->
+
+    <!--Footer section starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">prediction</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my favourite</a>
+            </div>
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">Sri Lanka</a>
+                <a href="#">USA</a>
+                <a href="#">japan</a>
+                <a href="#">france</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+94 77 123 4567</a>
+                <a href="#">example@gmail.com</a>
+                <a href="#">colombo,Sri Lanka - 400104</a>
+            </div>
+        </div>
+
+        <div class="credit">created by<span> Group 4 </span> | all rights reserved </div>
+
+    </section>
+    <!--Footer section ends-->
+
+
+</body>
+
+</html>
